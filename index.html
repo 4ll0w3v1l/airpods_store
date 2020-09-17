@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html id="wholeBody">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap" rel="stylesheet">
+	<title> </title>
+</head>
+
+<body>
+
+	<div id="sliderDivider">
+
+		<h3>
+
+		</h3>
+
+		<div class="buttons" style="width:100vw; top:60vh;">
+			<ul >
+				<li>
+					<a href="#" id="productButton1" style="text-decoration: none;padding: 18px; color: #d8261c;">кнопка</a>
+				</li>
+				<li>
+					<a href="#" id="productButton2" style="text-decoration: none;padding: 18px; color: #d8261c;">кнопка</a>
+				</li>
+
+				<li>
+					<a href="#" id="productButton3" style="text-decoration: none;padding: 18px; color: #d8261c;">кнопка</a>
+				</li>
+				<li>
+					<a href="#" id="productButton4" style="text-decoration: none;padding: 18px; color: #d8261c;">кнопка</a>
+				</li>
+			</ul>
+		</div>
+		<div id="divPic">
+			<img id="icon" src="img/icon.png">
+		</div>
+	</div>
+	<div id="mainDivider">
+		<h1>Наша продукция</h1>
+		<div class="row1">
+			<div class="column1">
+				<img src="img\airpods\airpods_2_no_wirless_charge.jpg">
+		<div class="row2">
+			<div class="column1">
+				<img src="img\airpods\airpods_2_wirless_charge.jpg">
+			</div>
+		</div>
+
+			<div class="column1">
+				<img src="img\airpods\airpods_pro_black.jpg">
+			</div>
+				<div class="column1">
+					<img src="img\airpods\airpods_pro.jpg">
+				</div>
+			</div>
+		</div>
+
+		<img src="img\airpods\airpods_white.jpg">
+	</div>
+</body>
+
+<script type="text/javascript">
+
+var rotated = false;
+
+document.getElementById('wholeBody').onclick = function() {
+	var div = document.getElementById('icon'),
+			deg = rotated ? 0 : 180;
+
+	div.style.webkitTransform = 'rotate('+deg+'deg)';
+	div.style.mozTransform    = 'rotate('+deg+'deg)';
+	div.style.msTransform     = 'rotate('+deg+'deg)';
+	div.style.oTransform      = 'rotate('+deg+'deg)';
+	div.style.transform       = 'rotate('+deg+'deg)';
+
+	rotated = !rotated;
+}
+
+
+</script>
+
+</html>
