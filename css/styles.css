@@ -100,28 +100,16 @@ sliderDivider{
 	background-color: white;
 	overflow: hidden;
 	text-align: center;
-	position: relative;
-	top: 150px;
-	z-index: 0;
-
-			}
-}
-
-#mainDivider h1{
-
-	position: relative;
-	font-size: 50px;
-	width: 100vw;
-	text-align: center;
-
-
+	top: 40px;
 }
 
 #mainDivider img{
 
 	position: relative;
-	top: 40px;
+}
 
+#mainDivider h1{
+	position: inherit;
 }
 
 #descDivider{
