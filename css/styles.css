@@ -26,7 +26,9 @@ html{
 #body{
 	overflow: hidden;
 }
-
+.main{
+	text-align: center;
+}
 #icon{
 
 	opacity: 0.19;
@@ -98,6 +100,11 @@ sliderDivider{
 	background-color: white;
 	overflow: hidden;
 	text-align: center;
+	position: relative;
+	top: 150px;
+	z-index: 0;
+
+			}
 }
 
 #mainDivider h1{
@@ -163,7 +170,7 @@ li a {
 
 	}
 	.row1 {
-		display: flex;
+		display: inline-flex;
 
 	}
 
@@ -182,12 +189,3 @@ li a {
 	  flex: 33.33%;
 	  padding: 5px;
 	}
-#mainDivider{
-
-			position: relative;
-			top: 150px;
-			width: 80vw;
-			left: 9vw;
-			z-index: 0;
-
-		}
